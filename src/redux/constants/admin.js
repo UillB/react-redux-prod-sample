@@ -1,0 +1,5 @@
+export const SET_ACTIVE_INPUT = 'SET_ACTIVE_INPUT';
+export const RESET_ACTIVE_INPUT = 'RESET_ACTIVE_INPUT';
+export const GET_USERS = 'GET_USERS';
+export const GET_GROUPS = 'GET_GROUPS';
+export const RESET_REDUX = 'RESET_REDUX';

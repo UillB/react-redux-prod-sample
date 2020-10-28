@@ -1,0 +1,204 @@
+
+.builder-container
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 90px);
+  overflow: hidden;
+  position: relative;
+
+.builder-title
+  h1
+    color: #fff
+    margin: auto
+    max-width: 1065px
+    margin-bottom: 20px
+
+.builder-title-box
+  text-align: center
+
+  & > span
+    margin 0 10px
+    cursor pointer
+
+  .active
+    font-weight: 500
+    text-decoration: underline
+
+.builder-body
+  display: flex
+  justify-content: center;
+  flex-grow: 1
+
+.builder-constructor
+  display: flex
+  flex-direction column
+  position: relative
+  width: 800px
+  max-width: 100%
+  box-sizing: border-box
+  overflow-y: auto
+  padding-left: 70px;
+  margin-right: 50px
+
+.builder-tools
+  position: absolute
+  left: 10px
+  display: flex
+  flex-direction: column
+  transition-duration: 1s;
+.builder-tools-item
+  display: flex
+  flex-direction: column
+  background: #fff
+  margin-bottom: 20px
+  padding: 12px
+  & > i
+    margin-bottom: 10px
+    font-size: 16px;
+    &:last-child
+      margin: 0
+
+.builder-title
+  font-weight: 500
+
+.builder-footer-btn
+  position: sticky
+  bottom 0
+  right: 0
+  left: 0
+  box-sizing border-box
+  background-color: white
+  border: 1px solid #e4dcdc
+  padding: 10px 40px
+  display: flex
+  justify-content: space-around
+  flex-shrink: 0
+  button.ant-btn-primary
+    width 270px
+    height: 40px
+    border-radius: 0
+  button.ant-btn-default
+    width 270px
+    height: 40px
+    border-radius: 0
+
+.builder-publish
+  display: block
+
+.builder-gen-setting
+  padding: 25px 25px 0
+  background-color white
+  border: 1px solid #e4dcdc
+  margin-bottom 20px
+  .form-text-box
+    margin-bottom 25px
+
+.builder-nodes
+  margin-bottom: 30px
+  text-align: center
+
+  & > button
+    margin 0 5px
+
+
+.question-br
+  margin 25px 0
+
+.question-box
+  position: relative
+  padding: 40px 25px 25px;
+  background-color: #fff;
+  border: 1px solid #e4dcdc;
+  margin-bottom: 20px;
+  &.active
+    border-color: #1B71F6
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+.question-title
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  left: 24px;
+  border: 1px solid #1B71F6;
+  height: 35px;
+  width: 120px;
+  text-align: center;
+  padding: 5px 0;
+  background-color: #1B71F6;
+  color: white;
+
+.question-menu
+  position: absolute
+  top: 5px
+  right: 10px
+
+.option
+  display: flex
+  align-items center
+  background-color: #fff
+  margin-bottom: 2px
+  padding: 0 10px;
+  height: 40px
+  .input-view
+    padding: 0 5px
+    flex-grow: 1
+  .input-edit
+    flex-grow: 1
+    height: 25px
+    border-bottom: 1px solid blue;
+    padding: 0;
+    margin-left: 5px;
+  .anticon
+    display: none
+  &:hover .anticon
+    display: block
+
+
+.builder-container
+  .ant-calendar-picker-input
+  .ant-select-selection
+    border: 1px solid #E9E9E9
+    border-radius: 0
+
+
+.input-view
+  background: #fff;
+  font-size: 16px;
+  padding: 0 15px;
+  line-height: 40px;
+  height: 40px;
+  border-bottom 1px solid #E9E9E9
+
+.input-edit
+  height: 40px;
+  background: #fff;
+  padding: 0 15px;
+  box-sizing: border-box;
+  width: 100%;
+  color: #22324A;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  font-weight: inherit;
+  font-family: inherit;
+  border-bottom 2px solid #1B71F6
+  transition all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+.input-title
+  font-size: 16px;
+  color: #7B8493;
+  margin-bottom 10px
+
+
+.builder-scroll
+  overflow-y: auto;
+  position: relative;
+  padding: 0 50px;
+
+.builder-empty
+  flex-grow: 1
+  flex-shrink: 1

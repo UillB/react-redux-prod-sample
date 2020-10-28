@@ -1,0 +1,91 @@
+.navigation
+  display: flex;
+  align-items: self-start;
+  list-style: none;
+  margin: 0;
+  //background-color: #fff;
+  padding: 25px 150px;
+  height: 265px;
+  box-sizing: border-box;
+  background linear-gradient(to left, #2E3366, #16173C)
+  .navigation-item
+    display: flex;
+    height: 60px;
+    margin-right: 20px;
+    align-items: center;
+    a, span
+      font-size: 18px
+      //height: inherit
+      //padding-top: 15px;
+      font-weight: 300
+      display: inline-block
+      color: #fff
+      text-decoration: none
+      cursor: pointer
+      transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+      &:hover
+        color: #1b71f6
+        font-weight: 300;
+  //.navigation-item#sign-out
+    //margin-left: auto
+    //padding-right: 40px
+
+.navigation .navigation-item .nav-logo
+  display flex
+  //padding 10px 10px 10px 0
+  margin-right: 10px
+
+.nav-logo-g
+  height: 40px;
+  width: 40px
+  background: url(/img/favicon.png) no-repeat;
+  -webkit-background-size: contain
+  background-size: contain
+
+.navigation .navigation-item .nav-logo-title
+  display: flex;
+  align-items: center;
+  color: #fff
+  font-weight: 500;
+  font-size: 22px
+  //padding-top: 5px
+  margin-left: 10px
+
+.navigation .navigation-item .nav-logo .vote-label-word
+  color:#1b71f6
+  font-size: 23px;
+  font-weight: 500;
+
+
+#navigation-create-vote
+  margin-left auto
+  button
+    background-color: #1b71f6
+    padding: 7px 30px
+    border: 0
+    color: white
+    font-weight: 100
+    cursor: pointer
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 5px
+    &:hover
+      background-color: #40a9ff
+
+#sign-out
+  span
+    padding 0
+
+.menu-user
+  color: #fff;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer
+  margin-left: auto
+  .anticon
+    font-weight: 900;
+    margin-left: 5px
+
+.menu-user-admin
+  display: none

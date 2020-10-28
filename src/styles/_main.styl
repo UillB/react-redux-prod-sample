@@ -1,0 +1,132 @@
+@import "./builder.styl"
+@import "./signup.styl"
+@import "./navigation.styl"
+@import "./vote.styl"
+@import "./vote-view.styl"
+@import "./users.styl"
+@import "./vote-results.styl"
+@import "./_mobile.styl"
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+body
+  margin: 0
+  padding: 0
+  font-family: 'Open Sans', sans-serif;
+  font-weight 300
+  font-size 16px
+  //overflow-y: hidden
+
+//#app
+//  padding: 30px 0 0
+
+//Overwriting antd styles in this section
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td
+  background-color: white
+
+.ant-form-item-label
+  text-align: left
+
+.ant-notification-notice
+  border-radius: 25px
+  border-top-right-radius: 0
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+  background: #fff
+  margin-bottom: 16px
+
+.ant-notification-notice-icon
+  top: 50%
+  transform: translateY(-50%)
+
+.ant-popover-buttons
+  text-align: center
+
+.ant-confirm .ant-confirm-btns
+  float: none
+  text-align: center
+
+//End of the overwriting antd styles
+
+
+.box-btn-delete
+  position: absolute
+  top: 0
+  right: 0
+
+.form-text-box
+  display: block
+  margin: 0 0 10px 0
+
+.breadcrumb
+  a
+    text-decoration: none
+    color: #000
+    font-weight: 400
+    font-size: 12px
+    text-transform: uppercase
+
+.app-wrap
+  background-color: #f6f7fb
+  min-height: 100vh
+
+
+.app-body
+  margin-top: -175px;
+
+.notification-wrapper
+  position: fixed
+  top: 30px
+  right: 50px
+  list-style: none
+  max-width: 500px;
+  width: 100%;
+  z-index: 999999;
+
+.notification
+  background-color: white
+  min-height: 30px
+  height: auto
+  padding: 30px
+  margin-top: 20px
+  font-size: 14px
+  font-weight: bold
+  border-radius: 20px
+  border-top-right-radius: 0
+  text-overflow: ellipsis
+  animation: fadein 0.8s ease-in
+  position: relative
+
+.notification-close
+  position: absolute
+  top: 10px
+  right: 20px
+  opacity: 0.5
+  cursor: pointer
+  &:hover
+    opacity 1
+
+.notification-email
+  color: blue
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+.btn-default
+  background-color: #f2f2f2
+
+.btn-primary
+  background-color: #1b71f6
+  color: #fff
+  &:hover
+    color: #000
+
+.info-text
+  color: #fff
+  font-size: 15px
+  font-weight: 500
